@@ -2,76 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shenna | Developer ePortfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Link to CSS -->
+  <title>Shenna | Teaching ePortfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- HEADER / HERO SECTION -->
-  <header class="hero">
-    <h1>Shenna</h1>
-    <p class="subtitle">Aspiring Software Developer</p>
-    <p class="tagline">
-      Building clean, simple, and effective web solutions.
-    </p>
+<div class="container">
 
-    <div class="links">
-      <a href="https://github.com/shenna2017" target="_blank">GitHub</a>
-      <a href="mailto:your-email@example.com">Contact</a>
-    </div>
-  </header>
-
-  <!-- ABOUT SECTION -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a student developer learning web technologies and software development.
-      This ePortfolio showcases my projects, skills, and progress as I grow into
-      a professional developer.
-    </p>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Git & GitHub</li>
-      <li>Problem Solving</li>
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <h2>ePortfolio</h2>
+    <ul>
+      <li><a href="teaching.html">Teaching Philosophy</a></li>
+      <li><a href="reflections.html">Student Reflections</a></li>
+      <li><a href="udl.html">UDL Plan</a></li>
+      <li><a href="implementation.html">Implementation</a></li>
+      <li><a href="evaluation.html">Evaluation</a></li>
+      <li><a href="reflection.html">Final Reflection</a></li>
     </ul>
-  </section>
 
-  <!-- PROJECTS SECTION -->
-  <section>
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Personal Portfolio Website</h3>
-      <p>
-        A responsive personal website built using HTML and CSS to showcase my work.
-      </p>
-      <a href="#" target="_blank">View on GitHub</a>
+    <div class="progress-box">
+      <p>Portfolio Progress</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 / 6 completed</span>
     </div>
+  </nav>
 
-    <div class="project">
-      <h3>JavaScript Mini App</h3>
-      <p>
-        A small JavaScript project demonstrating logic, DOM manipulation, and user interaction.
-      </p>
-      <a href="#" target="_blank">View on GitHub</a>
-    </div>
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <h1>Welcome to My Teaching ePortfolio</h1>
+    <p>
+      This portfolio documents my teaching philosophy, student engagement,
+      implementation of Universal Design for Learning, and reflective practice.
+    </p>
 
-  </section>
+    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+         alt="Teaching" class="main-image">
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Shenna | Developer ePortfolio</p>
-  </footer>
+    <p>
+      Each section in the left navigation explores a key component of my
+      professional teaching journey and pedagogical growth.
+    </p>
+  </main>
+
+</div>
 
 </body>
 </html>
