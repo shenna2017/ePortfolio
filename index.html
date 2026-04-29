@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shenna | ePortfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 80px;
+      background: #f4f4f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Shenna</h1>
-  <p>Student Developer | HTML • CSS • JavaScript</p>
+  <h1>Hello GitHub Pages 👋</h1>
+  <p>This is a simple test page you can deploy.</p>
 
-  <h2>About Me</h2>
-  <p>
-    I am learning web development and building projects to improve my skills.
-    This portfolio showcases my work and progress.
-  </p>
+  <button onclick="showMessage()">Click Me</button>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Project 1:</strong> Simple Website  
-      <a href="#">GitHub Link</a>
-    </li>
-    <li>
-      <strong>Project 2:</strong> JavaScript App  
-      <a href="#">GitHub Link</a>
-    </li>
-  </ul>
+  <div id="output"></div>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>GitHub: <a href="https://github.com/shenna2017">shenna2017</a></p>
+  <script>
+    function showMessage() {
+      const messages = [
+        "Nice click!",
+        "It works 🎉",
+        "You're running JavaScript on GitHub Pages!",
+        "Keep building 🚀"
+      ];
 
+      const random = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("output").innerText = random;
+    }
+  </script>
+
+</body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
 </body>
 </html>
