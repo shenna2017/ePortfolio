@@ -477,6 +477,77 @@ p{color:var(--text-2)}
   .s2-theme-grid{grid-template-columns:1fr}
 }
 
+/* ── MOBILE RESPONSIVE ADDITIONS ── */
+@media(max-width:768px){
+  /* nav */
+  .nav-wrap{padding:0 12px;top:28px}
+  .nav-inner{padding:10px 16px}
+  /* hero */
+  .hero{padding:110px 16px 72px}
+  .h-name{font-size:clamp(2.4rem,8vw,3.2rem)}
+  .h-btns{flex-direction:column;gap:10px}
+  .btn{width:100%;justify-content:center}
+  /* sections */
+  .sec,.sec-alt{padding:64px 16px}
+  .wrap{padding:0}
+  /* grids that need mobile stack */
+  .s2-changes-grid{grid-template-columns:1fr}
+  .refl-grid{grid-template-columns:1fr}
+  .eval-cols{grid-template-columns:1fr}
+  .ft-inner{grid-template-columns:1fr;gap:28px}
+  /* inline grids in S5 banners */
+  [style*="grid-template-columns:1fr auto"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.6fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1.3fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1.05fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.15fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:auto 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.2fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.8fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  /* padding reductions */
+  [style*="padding:36px 44px"]{padding:20px 18px!important}
+  [style*="padding:28px 36px"]{padding:18px 16px!important}
+  [style*="padding:28px 32px"]{padding:18px 16px!important}
+  [style*="padding:32px 40px"]{padding:18px 16px!important}
+  /* hero font size */
+  [style*="font-size:clamp(2rem,3.5vw"]{font-size:clamp(1.7rem,7vw,2.4rem)!important}
+  [style*="font-size:clamp(1.5rem,2.6vw"]{font-size:clamp(1.3rem,6vw,1.9rem)!important}
+  /* flex rows that overflow */
+  [style*="display:flex;align-items:center;gap:16px;margin-bottom:32px"]{flex-wrap:wrap}
+  /* min-width overrides */
+  [style*="min-width:230px"]{min-width:0!important;width:100%!important}
+  [style*="min-width:200px"]{min-width:0!important;width:100%!important}
+  [style*="min-width:110px"]{min-width:0!important}
+  /* SVG lollipop chart scrollable */
+  [style*="min-width:700px"]{min-width:600px}
+  /* footer footer */
+  .ft-btm{flex-direction:column;gap:4px;text-align:center}
+}
+
+@media(max-width:480px){
+  .eval-kpis{grid-template-columns:1fr}
+  .tr-stats{display:none}.a11y-lbl{display:none}
+  .ft-inner{grid-template-columns:1fr}
+  .s2-theme-grid{grid-template-columns:1fr}
+  .hero{padding:100px 14px 60px}
+  .sec,.sec-alt{padding:52px 14px}
+  [style*="padding:36px 44px"]{padding:16px 14px!important}
+  [style*="padding:28px 36px"]{padding:14px 12px!important}
+  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
+  [style*="grid-template-columns:repeat(5,1fr)"]{grid-template-columns:1fr 1fr!important}
+  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:2fr 1fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  .eval-kpis{grid-template-columns:1fr 1fr}
+  .pc-stats{grid-template-columns:1fr 1fr 1fr}
+  .a11y-bar{flex-wrap:wrap;gap:5px}
+  .ab-btn{font-size:.66rem;padding:3px 9px}
+}
+
+
 /* ── TEACHING PHILOSOPHY TABS ── */
 .philo-tabs-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:28px}
 .ptab{padding:8px 18px;border-radius:30px;border:1px solid var(--border);background:transparent;color:var(--text-3);font-size:.75rem;font-family:var(--font-b);font-weight:500;cursor:pointer;transition:all .25s;letter-spacing:.01em;white-space:nowrap}
@@ -6139,7 +6210,7 @@ p{color:var(--text-2)}
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
 
         <a href="https://openbadgefactory.com/v1/assertion/6fab207ec664a6b9ab14145b9adb650de0d7b9be.html" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:rgba(16,185,129,.04);border:1px solid rgba(16,185,129,.15);border-radius:10px;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='rgba(16,185,129,.08)';this.style.borderColor='rgba(16,185,129,.3)'" onmouseout="this.style.background='rgba(16,185,129,.04)';this.style.borderColor='rgba(16,185,129,.15)'">
-          <img src="badge.jpg" alt="UDL Badge" style="width:42px;height:42px;border-radius:7px;flex-shrink:0;object-fit:contain;" />
+          <img src="../../../../../../../Downloads/badge.jpg" alt="UDL Badge" style="width:42px;height:42px;border-radius:7px;flex-shrink:0;object-fit:contain;" />
           <div style="min-width:0;">
             <div style="font-family:var(--font-m);font-size:.47rem;color:var(--emerald-l);text-transform:uppercase;letter-spacing:.09em;margin-bottom:2px;">Verified &#8599;</div>
             <div style="font-size:.7rem;color:var(--white);font-weight:600;line-height:1.25;">Universal Design in Teaching &amp; Learning</div>
@@ -6148,7 +6219,7 @@ p{color:var(--text-2)}
         </a>
 
         <a href="https://openbadgefactory.com/v1/assertion/edf1564bff1221907cafb9ade5d0804c25d0796d.html" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:rgba(56,189,248,.04);border:1px solid rgba(56,189,248,.14);border-radius:10px;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='rgba(56,189,248,.08)';this.style.borderColor='rgba(56,189,248,.3)'" onmouseout="this.style.background='rgba(56,189,248,.04)';this.style.borderColor='rgba(56,189,248,.14)'">
-          <img src="ntutr.jpg" alt="N-TUTORR Badge" style="width:42px;height:42px;border-radius:7px;flex-shrink:0;object-fit:contain;" />
+          <img src="../../../../../../../Downloads/ntutr.jpg" alt="N-TUTORR Badge" style="width:42px;height:42px;border-radius:7px;flex-shrink:0;object-fit:contain;" />
           <div style="min-width:0;">
             <div style="font-family:var(--font-m);font-size:.47rem;color:var(--sky);text-transform:uppercase;letter-spacing:.09em;margin-bottom:2px;">Verified &#8599;</div>
             <div style="font-size:.7rem;color:var(--white);font-weight:600;line-height:1.25;">N-TUTORR Community Member</div>
