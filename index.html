@@ -631,6 +631,7 @@ p{color:var(--text-2)}
 .wb-p{padding:3px 12px;border-radius:20px;font-size:.67rem;font-weight:600;border:1px solid rgba(16,185,129,.25);color:var(--emerald-l);background:rgba(16,185,129,.08)}
 .conclusion-box{background:linear-gradient(135deg,rgba(232,163,32,.1),rgba(16,185,129,.06));border:1px solid rgba(232,163,32,.25);border-radius:var(--r-lg);padding:28px 32px;margin-top:28px;position:relative;overflow:hidden}
 .conclusion-box::before{content:open-quote;position:absolute;top:-14px;left:16px;font-family:var(--font-d);font-size:7rem;color:rgba(232,163,32,.12);line-height:1;pointer-events:none}
+.conclusion-box::after{content:'\201D';position:absolute;bottom:-14px;right:16px;font-family:var(--font-d);font-size:7rem;color:rgba(232,163,32,.12);line-height:1;pointer-events:none}
 .cb-text{font-family:var(--font-d);font-size:1.15rem;font-style:italic;font-weight:400;color:var(--white);line-height:1.7;position:relative;z-index:1}
 .cb-sub{font-size:.77rem;color:var(--text-3);margin-top:12px;font-family:var(--font-m)}
 @media(max-width:900px){.theory-grid{grid-template-columns:1fr}.principles-grid{grid-template-columns:1fr 1fr}}
@@ -893,7 +894,7 @@ p{color:var(--text-2)}
       <span style="font-family:var(--font-m);font-size:.48rem;padding:2px 8px;border-radius:20px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.15);color:var(--emerald-l);margin-right:6px;">02</span>Theoretical grounding
     </div>
     <p class="philo-text" style="text-align:justify;hyphens:auto;">
-      Drawing on Bransford et al. (1999), I understand learning as most effective when new knowledge is actively connected to prior understanding within structured environments. Lev Vygotsky's (1978) Zone of Proximal Development (ZPD) positions learning as socially mediated, requiring guided support to extend capability, while Jerome Bruner (1961) emphasises scaffolding as a mechanism for progressively transferring responsibility to the learner. I therefore conceptualise learning as an active, socially situated, and scaffolded process in which knowledge is constructed through experience, reflection, and interaction. Teaching, within this framework, is the intentional design of conditions that enable this construction, rather than the transmission of content.
+      Drawing on Bransford et al. (1999), I understand learning as most effective when new knowledge is actively connected to prior understanding within structured environments. Vygotsky's (1978) Zone of Proximal Development (ZPD) positions learning as socially mediated, requiring guided support to extend capability, while Bruner (1961) emphasises scaffolding as a mechanism for progressively transferring responsibility to the learner. I therefore conceptualise learning as an active, socially situated, and scaffolded process in which knowledge is constructed through experience, reflection, and interaction. Teaching, within this framework, is the intentional design of conditions that enable this construction, rather than the transmission of content.
     </p>
   </div>
 
@@ -955,11 +956,11 @@ p{color:var(--text-2)}
             </div>
             <div class="pill-item" role="listitem">
               <div class="pi-ico" aria-hidden="true">🎯</div>
-              <div><div class="pi-ttl">Multiple Means of Engagement</div><div class="pi-desc">A searchable, filterable dashboard across three tiers, including AI Foundations, Deep Learning and Advanced Concepts. Interactive technologies including AI-enabled dashboards, live simulations and games allow students to explore at their own pace (Prince, 2004).</div></div>
+              <div><div class="pi-ttl">Multiple Means of Engagement</div><div class="pi-desc">A searchable, filterable dashboard across three tiers, including AI Foundations, Deep Learning and Advanced Concepts. Interactive technologies including AI-enabled dashboards, live simulations and games allow students to explore at their own pace Prince (2004).</div></div>
             </div>
             <div class="pill-item" role="listitem">
               <div class="pi-ico" aria-hidden="true">✍️</div>
-              <div><div class="pi-ttl">Multiple Means of Action &amp; Expression</div><div class="pi-desc">In-browser structured reflections stored for each student, using two guided prompts per module. Low-stakes and formative, promoting self-regulation and metacognitive skills (Nicol &amp; Macfarlane-Dick, 2006) across all modules.</div></div>
+              <div><div class="pi-ttl">Multiple Means of Action &amp; Expression</div><div class="pi-desc">In-browser structured reflections stored for each student, using two guided prompts per module. Low-stakes and formative, promoting self-regulation and metacognitive skills (Nicol and Macfarlane-Dick, 2006) across all modules.</div></div>
             </div>
           </div>
         </div>
@@ -1001,7 +1002,7 @@ p{color:var(--text-2)}
       <p style="font-size:.88rem;color:var(--text-2);line-height:1.85;margin-bottom:6px;text-align:justify;hyphens:auto;">My inclusive pedagogy draws on eight key works across cognitive science, educational theory, UDL, and multimedia learning. Click any card to expand the full theoretical context. These theories are not treated as separate influences but as a convergent framework for designing cognitively coherent, inclusive learning environments.</p>
       <div class="theory-grid">
         <div class="theory-card" onclick="togTheory(this)" aria-expanded="false">
-          <div class="tc-header"><div class="tc-icon">🧪</div><div><div class="tc-name">How People Learn</div><div class="tc-author">Bransford, Brown &amp; Cocking (1999)</div></div><span class="tc-chevron">▼</span></div>
+          <div class="tc-header"><div class="tc-icon">🧪</div><div><div class="tc-name">How People Learn</div><div class="tc-author">Bransford, Brown and Cocking (1999)</div></div><span class="tc-chevron">▼</span></div>
           <div class="tc-body"><p>Meaningful learning occurs when students actively construct knowledge in contexts that are <strong style="color:var(--amber-l)">relevant, supported, and scaffolded</strong>. Every AI module is structured with explicit scaffolding.</p><span class="tc-tag">Applied: module scaffolding structure</span></div>
         </div>
         <div class="theory-card" onclick="togTheory(this)" aria-expanded="false">
@@ -1017,7 +1018,7 @@ p{color:var(--text-2)}
           <div class="tc-body"><p>Learning is enhanced when complementary <strong style="color:var(--amber-l)">visual and auditory channels</strong> are used together. Every module pairs a visual simulation with an audio-enabled lecture.</p><span class="tc-tag">Applied: dual-channel module delivery</span></div>
         </div>
         <div class="theory-card" onclick="togTheory(this)" aria-expanded="false">
-          <div class="tc-header"><div class="tc-icon">📋</div><div><div class="tc-name">Formative Assessment</div><div class="tc-author">Nicol &amp; Macfarlane-Dick (2006)</div></div><span class="tc-chevron">▼</span></div>
+          <div class="tc-header"><div class="tc-icon">📋</div><div><div class="tc-name">Formative Assessment</div><div class="tc-author">Nicol and Macfarlane-Dick (2006)</div></div><span class="tc-chevron">▼</span></div>
           <div class="tc-body"><p>Effective formative assessment <strong style="color:var(--amber-l)">encourages reflection, improves motivation, and strengthens learner autonomy</strong>. The two-reflection-per-module system is low-stakes and structured, designed specifically to reduce assessment anxiety while building the self-monitoring habits that transfer beyond any single module.</p><span class="tc-tag">Applied: prompt-driven reflection system</span></div>
         </div>
         <div class="theory-card" onclick="togTheory(this)" aria-expanded="false">
@@ -1025,48 +1026,30 @@ p{color:var(--text-2)}
           <div class="tc-body"><p>Interactive and student-centred strategies <strong style="color:var(--amber-l)">significantly improve learning outcomes, motivation, and confidence</strong>. 94% simulation engagement provides direct empirical support.</p><span class="tc-tag">Applied: simulation engagement data</span></div>
         </div>
         <div class="theory-card" onclick="togTheory(this)" aria-expanded="false">
-          <div class="tc-header"><div class="tc-icon">🤝</div><div><div class="tc-name">UDL Theoretical Foundations</div><div class="tc-author">Novak, Razzouk &amp; Johnson (2020)</div></div><span class="tc-chevron">▼</span></div>
+          <div class="tc-header"><div class="tc-icon">🤝</div><div><div class="tc-name">UDL Theoretical Foundations</div><div class="tc-author">Novak (2020)</div></div><span class="tc-chevron">▼</span></div>
           <div class="tc-body"><p>UDL's foundations ground inclusive design in <strong style="color:var(--amber-l)">neuroscience, social justice, and adaptive learning</strong>.</p><span class="tc-tag">Applied: adaptive dashboard tiers</span></div>
         </div>
         <div class="theory-card" onclick="togTheory(this)" aria-expanded="false">
-          <div class="tc-header"><div class="tc-icon">📱</div><div><div class="tc-name">Teaching Every Student</div><div class="tc-author">Rose &amp; Meyer (2002)</div></div><span class="tc-chevron">▼</span></div>
+          <div class="tc-header"><div class="tc-icon">📱</div><div><div class="tc-name">Teaching Every Student</div><div class="tc-author">Rose and Meyer (2002)</div></div><span class="tc-chevron">▼</span></div>
           <div class="tc-body"><p>The digital age demands that <strong style="color:var(--amber-l)">curriculum, instruction, and assessment be designed from the outset</strong> to meet the needs of all learners.</p><span class="tc-tag">Applied: accessibility-first HTML structure</span></div>
         </div>
       </div>
-      <button class="refs-toggle" onclick="togRefs()" id="refsToggle" aria-expanded="false" aria-controls="refsPanel">
-        <span class="refs-toggle-icon">📚</span>
-        <span class="refs-toggle-lbl">📚 References</span>
-        <span class="refs-toggle-arrow" id="refsArrow">▼</span>
-      </button>
-      <div class="refs-panel" id="refsPanel" role="region" aria-label="Academic references">
-        <div class="refs-inner">
-          <div class="ref-item"><span>Bransford, J.D., Brown, A.L. and Cocking, R.R. (1999) <em>How people learn.</em> Washington, DC: National Academy Press.</span></div>
-          <div class="ref-item"><span>Bruner, J. (1961) 'The act of discovery', <em>Harvard Educational Review,</em> 31(1), pp. 21–32.</span></div>
-          <div class="ref-item"><span>CAST (2024) <em>Universal Design for Learning Guidelines version 3.0.</em> Wakefield, MA: CAST.</span></div>
-          <div class="ref-item"><span>Kolb, D.A. (1984) <em>Experiential learning.</em> Englewood Cliffs, NJ: Prentice Hall.</span></div>
-          <div class="ref-item"><span>Mayer, R.E. (2009) <em>Multimedia learning.</em> 2nd edn. Cambridge: Cambridge University Press.</span></div>
-          <div class="ref-item"><span>Nicol, D.J. and Macfarlane-Dick, D. (2006) 'Formative assessment and self-regulated learning', <em>Studies in Higher Education,</em> 31(2), pp. 199–218.</span></div>
-          <div class="ref-item"><span>Novak, E., Razzouk, R. and Johnson, T.E. (2020) 'The theoretical foundations of UDL', <em>International Journal of Inclusive Education,</em> 24(7), pp. 706–725.</span></div>
-          <div class="ref-item"><span>Prince, M. (2004) 'Does active learning work?', <em>Journal of Engineering Education,</em> 93(3), pp. 223–231.</span></div>
-          <div class="ref-item"><span>Rose, D. and Meyer, A. (2002) <em>Teaching every student in the digital age.</em> Alexandria, VA: ASCD.</span></div>
-          <div class="ref-item"><span>Vygotsky, L.S. (1978) <em>Mind in society.</em> Cambridge, MA: Harvard University Press.</span></div>
-        </div>
-      </div>
+      
     </div>
     <!-- TAB 3 -->
     <div id="pt3" class="ptab-panel" role="tabpanel">
       <h3 style="font-family:var(--font-d);font-size:1.45rem;font-style:italic;font-weight:400;color:var(--white);margin-bottom:6px">Nine Principles of Inclusive AI Education</h3>
   <p style="font-size:.88rem;color:var(--text-2);line-height:1.85;margin-bottom:20px;text-align:justify;hyphens:auto;">My teaching philosophy is grounded in nine research-informed principles of inclusive AI education, operationalised through the design and implementation of the AI Learning Dashboard.</p>
       <div class="principles-grid">
-        <div class="pr-card" data-n="1"><div class="pr-num">Principle 01</div><span class="pr-icon">🌐</span><div class="pr-title">Inclusive by Architecture, Not Afterthought</div><p class="pr-text">Accessibility features are built into every module page from the first line of code. No student is redirected to a separate accessible version.</p><div class="pr-refs"><span class="pr-ref">CAST 2024</span><span class="pr-ref">Rose &amp; Meyer 2002</span></div></div>
-        <div class="pr-card" data-n="2"><div class="pr-num">Principle 02</div><span class="pr-icon">🧠</span><div class="pr-title">Multi-Modal Content as Standard</div><p class="pr-text">Every AI concept is delivered through PDF notes, YouTube video, interactive simulation, and written summary simultaneously.</p><div class="pr-refs"><span class="pr-ref">Mayer 2009</span><span class="pr-ref">Bransford 1999</span></div></div>
-        <div class="pr-card" data-n="3"><div class="pr-num">Principle 03</div><span class="pr-icon">🔬</span><div class="pr-title">Active, Experiential Learning First</div><p class="pr-text">The GANLab simulation lets students observe adversarial training before reading the theory, experience precedes abstraction.</p><div class="pr-refs"><span class="pr-ref">Kolb 1984</span><span class="pr-ref">Prince 2004</span></div></div>
-        <div class="pr-card" data-n="4"><div class="pr-num">Principle 04</div><span class="pr-icon">📊</span><div class="pr-title">Formative, Low-Stakes Assessment</div><p class="pr-text">Two guided reflections per module, low-stakes, structured, stored locally. Students demonstrate understanding without assessment anxiety.</p><div class="pr-refs"><span class="pr-ref">Nicol &amp; Macfarlane-Dick 2006</span></div></div>
-        <div class="pr-card" data-n="5"><div class="pr-num">Principle 05</div><span class="pr-icon">⚡</span><div class="pr-title">Technology in Service of Learning</div><p class="pr-text">AI-enabled dashboards and interactive platforms are tools for inclusion, not novelty. Real-time feedback and adaptive tier navigation.</p><div class="pr-refs"><span class="pr-ref">CAST 2018</span><span class="pr-ref">Novak et al. 2020</span></div></div>
-        <div class="pr-card" data-n="6"><div class="pr-num">Principle 06</div><span class="pr-icon">💚</span><div class="pr-title">Student Well-being as Prerequisite</div><p class="pr-text">Clear guidance, structured support, and a psychologically safe environment reduce extraneous cognitive load so students focus on AI content.</p><div class="pr-refs"><span class="pr-ref">Mayer 2009 (CLT)</span></div></div>
-        <div class="pr-card" data-n="7"><div class="pr-num">Principle 07</div><span class="pr-icon">🔁</span><div class="pr-title">Continuous Reflection &amp; Responsiveness</div><p class="pr-text">I actively seek student feedback, evaluate engagement data, and refine modules based on evidence. Inclusivity is never a completed project.</p><div class="pr-refs"><span class="pr-ref">CAST 2018</span><span class="pr-ref">Nicol 2006</span></div></div>
-        <div class="pr-card" data-n="8"><div class="pr-num">Principle 08</div><span class="pr-icon">🤝</span><div class="pr-title">Scaffolded Independence &amp; Learner Autonomy</div><p class="pr-text">Tiered content and guided prompts provide temporary structure that builds independent thinking and self-regulated learning.</p><div class="pr-refs"><span class="pr-ref">Vygotsky 1978</span><span class="pr-ref">Bruner 1961</span></div></div>
-        <div class="pr-card" data-n="9"><div class="pr-num">Principle 09</div><span class="pr-icon">🌱</span><div class="pr-title">Socially Mediated Knowledge Construction</div><p class="pr-text">Peer reflection, discussion-based activities, and collaborative problem-solving tasks ensure knowledge is constructed socially as well as individually.</p><div class="pr-refs"><span class="pr-ref">Vygotsky 1978</span><span class="pr-ref">Bransford 1999</span></div></div>
+        <div class="pr-card" data-n="1"><div class="pr-num">Principle 01</div><span class="pr-icon">🌐</span><div class="pr-title">Inclusive by Architecture, Not Afterthought</div><p class="pr-text">Accessibility features are built into every module page from the first line of code. No student is redirected to a separate accessible version.</p><div class="pr-refs"><span class="pr-ref">CAST (2024)</span><span class="pr-ref">Rose and Meyer (2002)</span></div></div>
+        <div class="pr-card" data-n="2"><div class="pr-num">Principle 02</div><span class="pr-icon">🧠</span><div class="pr-title">Multi-Modal Content as Standard</div><p class="pr-text">Every AI concept is delivered through PDF notes, YouTube video, interactive simulation, and written summary simultaneously.</p><div class="pr-refs"><span class="pr-ref">Mayer (2009)</span><span class="pr-ref">Bransford et al. (1999)</span></div></div>
+        <div class="pr-card" data-n="3"><div class="pr-num">Principle 03</div><span class="pr-icon">🔬</span><div class="pr-title">Active, Experiential Learning First</div><p class="pr-text">The GANLab simulation lets students observe adversarial training before reading the theory, experience precedes abstraction.</p><div class="pr-refs"><span class="pr-ref">Kolb (1984)</span><span class="pr-ref">Prince (2004)</span></div></div>
+        <div class="pr-card" data-n="4"><div class="pr-num">Principle 04</div><span class="pr-icon">📊</span><div class="pr-title">Formative, Low-Stakes Assessment</div><p class="pr-text">Two guided reflections per module, low-stakes, structured, stored locally. Students demonstrate understanding without assessment anxiety.</p><div class="pr-refs"><span class="pr-ref">Nicol and Macfarlane-Dick (2006)</span></div></div>
+        <div class="pr-card" data-n="5"><div class="pr-num">Principle 05</div><span class="pr-icon">⚡</span><div class="pr-title">Technology in Service of Learning</div><p class="pr-text">AI-enabled dashboards and interactive platforms are tools for inclusion, not novelty. Real-time feedback and adaptive tier navigation.</p><div class="pr-refs"><span class="pr-ref">CAST (2024)</span><span class="pr-ref">Novak (2020)</span></div></div>
+        <div class="pr-card" data-n="6"><div class="pr-num">Principle 06</div><span class="pr-icon">💚</span><div class="pr-title">Student Well-being as Prerequisite</div><p class="pr-text">Clear guidance, structured support, and a psychologically safe environment reduce extraneous cognitive load so students focus on AI content.</p><div class="pr-refs"><span class="pr-ref">Mayer (2009)</span></div></div>
+        <div class="pr-card" data-n="7"><div class="pr-num">Principle 07</div><span class="pr-icon">🔁</span><div class="pr-title">Continuous Reflection &amp; Responsiveness</div><p class="pr-text">I actively seek student feedback, evaluate engagement data, and refine modules based on evidence. Inclusivity is never a completed project.</p><div class="pr-refs"><span class="pr-ref">CAST (2024)</span><span class="pr-ref">Nicol and Macfarlane-Dick (2006)</span></div></div>
+        <div class="pr-card" data-n="8"><div class="pr-num">Principle 08</div><span class="pr-icon">🤝</span><div class="pr-title">Scaffolded Independence &amp; Learner Autonomy</div><p class="pr-text">Tiered content and guided prompts provide temporary structure that builds independent thinking and self-regulated learning.</p><div class="pr-refs"><span class="pr-ref">Vygotsky (1978)</span><span class="pr-ref">Bruner (1961)</span></div></div>
+        <div class="pr-card" data-n="9"><div class="pr-num">Principle 09</div><span class="pr-icon">🌱</span><div class="pr-title">Socially Mediated Knowledge Construction</div><p class="pr-text">Peer reflection, discussion-based activities, and collaborative problem-solving tasks ensure knowledge is constructed socially as well as individually.</p><div class="pr-refs"><span class="pr-ref">Vygotsky (1978)</span><span class="pr-ref">Bransford et al. (1999)</span></div></div>
       </div>
     </div>
     <!-- TAB 4 -->
@@ -1082,7 +1065,7 @@ p{color:var(--text-2)}
             </div>
             <div class="acc-item" onclick="togAcc(this)">
               <div class="acc-head"><span class="acc-icon">🟡</span><span class="acc-title">Stage 2 — Reflective Observation</span><span class="acc-badge">Guided</span><span class="acc-arrow">▼</span></div>
-              <div class="acc-body"><div class="acc-body-inner">Reflection Prompt 1: <em style="color:var(--amber-l)">"What did you observe in the simulation? What surprised you? What did you expect that didn't happen?"</em>, structured to guide observation rather than summarise content.<br><span class="acc-cite">Nicol &amp; Macfarlane-Dick (2006)</span></div></div>
+              <div class="acc-body"><div class="acc-body-inner">Reflection Prompt 1: <em style="color:var(--amber-l)">"What did you observe in the simulation? What surprised you? What did you expect that didn't happen?"</em>, structured to guide observation rather than summarise content.<br><span class="acc-cite">Nicol and Macfarlane-Dick (2006)</span></div></div>
             </div>
             <div class="acc-item" onclick="togAcc(this)">
               <div class="acc-head"><span class="acc-icon">🔵</span><span class="acc-title">Stage 3 — Abstract Conceptualisation</span><span class="acc-badge">Multi-modal</span><span class="acc-arrow">▼</span></div>
@@ -1113,11 +1096,11 @@ p{color:var(--text-2)}
       <div class="assessment-list">
         <div class="acc-item open" onclick="togAcc(this)">
           <div class="acc-head"><span class="acc-icon">✍️</span><span class="acc-title">Structured In-Browser Reflections</span><span class="acc-badge">18 modules</span><span class="acc-arrow">▼</span></div>
-          <div class="acc-body"><div class="acc-body-inner">Two guided reflections per module, stored in browser localStorage per student name and ID. Timestamped on submission, textarea locked to prevent overwriting. 186 reflections submitted in February–March 2026. Low-stakes by design.<br><span class="acc-cite">Nicol &amp; Macfarlane-Dick (2006) · CAST (2024)</span></div></div>
+          <div class="acc-body"><div class="acc-body-inner">Two guided reflections per module, stored in browser localStorage per student name and ID. Timestamped on submission, textarea locked to prevent overwriting. 186 reflections submitted in February–March 2026. Low-stakes by design.<br><span class="acc-cite">Nicol and Macfarlane-Dick (2006) · CAST (2024)</span></div></div>
         </div>
         <div class="acc-item" onclick="togAcc(this)">
           <div class="acc-head"><span class="acc-icon">🎯</span><span class="acc-title">Real-Time Progress Visibility</span><span class="acc-badge">Student-facing</span><span class="acc-arrow">▼</span></div>
-          <div class="acc-body"><div class="acc-body-inner">Every module page includes a real-time progress bar (0% → 100%) that updates as students complete reflections. Students always see exactly where they are in the module, reducing anxiety and supporting self-regulation.<br><span class="acc-cite">Nicol &amp; Macfarlane-Dick (2006)</span></div></div>
+          <div class="acc-body"><div class="acc-body-inner">Every module page includes a real-time progress bar (0% → 100%) that updates as students complete reflections. Students always see exactly where they are in the module, reducing anxiety and supporting self-regulation.<br><span class="acc-cite">Nicol and Macfarlane-Dick (2006)</span></div></div>
         </div>
         <div class="acc-item" onclick="togAcc(this)">
           <div class="acc-head"><span class="acc-icon">🔄</span><span class="acc-title">Iterative, Adaptive Module Design</span><span class="acc-badge">Evidence-driven</span><span class="acc-arrow">▼</span></div>
@@ -1125,7 +1108,7 @@ p{color:var(--text-2)}
         </div>
         <div class="acc-item" onclick="togAcc(this)">
           <div class="acc-head"><span class="acc-icon">🌈</span><span class="acc-title">Flexible Demonstration of Understanding</span><span class="acc-badge">UDL aligned</span><span class="acc-arrow">▼</span></div>
-          <div class="acc-body"><div class="acc-body-inner">Written reflection, simulation-based observation, peer-to-peer comparison, and iterative project work all sit alongside each other. No single assessment mode is privileged, particularly important where mathematics anxiety can mask genuine conceptual understanding.<br><span class="acc-cite">CAST (2024) · Rose &amp; Meyer (2002)</span></div></div>
+          <div class="acc-body"><div class="acc-body-inner">Written reflection, simulation-based observation, peer-to-peer comparison, and iterative project work all sit alongside each other. No single assessment mode is privileged, particularly important where mathematics anxiety can mask genuine conceptual understanding.<br><span class="acc-cite">CAST (2024) · Rose and Meyer (2002)</span></div></div>
         </div>
       </div>
     </div>
@@ -1141,18 +1124,39 @@ p{color:var(--text-2)}
         </div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px">
-        <div class="pr-card" data-n=""><span class="pr-icon">🔁</span><div class="pr-title">Continuous Reflection &amp; Responsiveness</div><p class="pr-text">I actively seek student feedback, evaluate the impact of teaching strategies, and refine my practice based on evidence and emerging best practices. Inclusivity is therefore <strong style="color:var(--amber-l)">dynamic</strong>, evolving with research, technology, and student diversity. The addition of the multi-language selector and animated GIF previews in 2025 are direct examples of practice changing in response to what students identified as missing.</p><div class="pr-refs"><span class="pr-ref">CAST 2024</span><span class="pr-ref">Nicol 2006</span></div></div>
-        <div class="pr-card" data-n=""><span class="pr-icon">🌱</span><div class="pr-title">Growth Mindset &amp; Lifelong Learning</div><p class="pr-text">Reflection and self-evaluation are embedded throughout all 18 AI modules. Students who engage with the reflection system are building <strong style="color:var(--amber-l)">metacognitive skills</strong> that extend far beyond AI content. The ability to articulate what you observed, what you understood, and how you would apply it is a transferable academic skill — and one that the structured two-prompt system is designed to develop consistently across every topic.</p><div class="pr-refs"><span class="pr-ref">Bransford 1999</span><span class="pr-ref">Kolb 1984</span></div></div>
+        <div class="pr-card" data-n=""><span class="pr-icon">🔁</span><div class="pr-title">Continuous Reflection &amp; Responsiveness</div><p class="pr-text" style="text-align:justify;hyphens:auto;">I actively seek student feedback, evaluate the impact of teaching strategies, and refine my practice based on evidence and emerging best practices. Inclusivity is therefore <strong style="color:var(--amber-l)">dynamic</strong>, evolving with research, technology, and student diversity. The addition of the multi-language selector and animated GIF previews in 2025 are direct examples of practice changing in response to what students identified as missing.</p><div class="pr-refs"><span class="pr-ref">CAST (2024)</span><span class="pr-ref">Nicol and Macfarlane-Dick (2006)</span></div></div>
+        <div class="pr-card" data-n=""><span class="pr-icon">🌱</span><div class="pr-title">Growth Mindset &amp; Lifelong Learning</div><p class="pr-text" style="text-align:justify;hyphens:auto;">Reflection and self-evaluation are embedded throughout all 18 AI modules. Students who engage with the reflection system are building <strong style="color:var(--amber-l)">metacognitive skills</strong> that extend far beyond AI content. The ability to articulate what you observed, what you understood, and how you would apply it is a transferable academic skill, and one that the structured two-prompt system is designed to develop consistently across every topic.</p><div class="pr-refs"><span class="pr-ref">Bransford et al. (1999)</span><span class="pr-ref">Kolb (1984)</span></div></div>
       </div>
       <div class="conclusion-box">
-       <p class="cb-text">My approach to inclusive teaching is grounded in theory, research, and sustained reflective practice. Designing the AI Learning Dashboard required me to critically examine assumptions I had not previously questioned that students could read dense slides at speed, that lab access was sufficient, that assessment anxiety was an individual problem rather than a design failure. Each of those assumptions, once named, became a design decision. By building multi-modal, accessible, and interactive learning experiences from the first line of code, I aim to ensure that all students can participate fully and achieve their highest potential. Inclusive education is not a professional add-on, it is the condition under which genuine learning becomes possible for every learner. In this model, I position myself not only as a lecturer but as a learning architect, responsible for designing environments in which all students can succeed.</p>
+       <p class="cb-text" style="text-align:justify;hyphens:auto;">My approach to inclusive teaching is grounded in theory, research, and sustained reflective practice. Designing the AI Learning Dashboard required me to critically examine assumptions I had not previously questioned that students could read dense slides at speed, that lab access was sufficient, that assessment anxiety was an individual problem rather than a design failure. Each of those assumptions, once named, became a design decision. By building multi-modal, accessible, and interactive learning experiences from the first line of code, I aim to ensure that all students can participate fully and achieve their highest potential. Inclusive education is not a professional add-on, it is the condition under which genuine learning becomes possible for every learner. In this model, I position myself not only as a lecturer but as a learning architect, responsible for designing environments in which all students can succeed.</p>
         <div class="cb-sub">Dr. Shagufta Henna · Teaching Philosophy · 2025–26</div>
+      </div>
+     <div style="margin-top:36px;">
+        <button onclick="var el=this.nextElementSibling;var open=el.classList.toggle('open');this.setAttribute('aria-expanded',open);this.querySelector('svg').style.transform=open?'rotate(180deg)':'rotate(0deg)';" aria-expanded="false" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px 18px;cursor:pointer;font-family:var(--font-m);font-size:.6rem;color:var(--text-2);width:100%;text-align:left;transition:background .2s;" onmouseover="this.style.background='rgba(255,255,255,.07)'" onmouseout="this.style.background='rgba(255,255,255,.04)'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--sky)" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          References &#183; Teaching Philosophy 
+          <svg style="margin-left:auto;transition:transform .3s" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="s2-refs-list" style="max-height:0;overflow:hidden;transition:max-height .5s ease;">
+          <div style="padding:24px 28px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-top:none;border-radius:0 0 8px 8px;display:flex;flex-direction:column;gap:9px;">
+           <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Bransford, J.D., Brown, A.L. and Cocking, R.R. (eds.) (1999) <em>How People Learn: Brain, Mind, Experience, and School.</em> Washington, DC: National Academy Press.</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Bruner, J.S. (1961) &#8216;The act of discovery&#8217;, <em>Harvard Educational Review,</em> 31(1), pp. 21&#8211;32.</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">CAST (2024) <em>Universal Design for Learning Guidelines version 3.0.</em> Wakefield, MA: CAST. Available at: https://udlguidelines.cast.org (Accessed: 1 April 2026).</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Kolb, D.A. (1984) <em>Experiential Learning: Experience as the Source of Learning and Development.</em> Englewood Cliffs, NJ: Prentice Hall.</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Mayer, R.E. (2009) <em>Multimedia Learning.</em> 2nd edn. Cambridge: Cambridge University Press.</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Nicol and Macfarlane-Dick (2006) &#8216;Formative assessment and self-regulated learning: a model and seven principles of good feedback practice&#8217;, <em>Studies in Higher Education,</em> 31(2), pp. 199&#8211;218.</div>
+   <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Novak (2020) <em>A Guide to UDL.</em> Novak Education. Available at: https://www.novakeducation.com/guide-to-udl (Accessed: 1 May 2026).</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Prince, M. (2004) &#8216;Does active learning work? A review of the research&#8217;, <em>Journal of Engineering Education,</em> 93(3), pp. 223&#8211;231.</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Rose, D.H. and Meyer, A. (2002) <em>Teaching Every Student in the Digital Age: Universal Design for Learning.</em> Alexandria, VA: Association for Supervision and Curriculum Development.</div>
+            <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;padding-left:16px;text-indent:-16px;">Vygotsky, L.S. (1978) <em>Mind in Society: The Development of Higher Psychological Processes.</em> Cambridge, MA: Harvard University Press.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 	
-	<!-- S2 STUDENT REFLECTIONS -->
+	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->	<!-- S2 STUDENT REFLECTIONS -->
 <section class="sec-alt" id="s2" aria-labelledby="s2h">
   <div class="wrap">
 
@@ -1187,7 +1191,7 @@ p{color:var(--text-2)}
             <span style="width:20px;height:1px;background:var(--amber-l)"></span>
             Before the Dashboard — Traditional Delivery Context
           </div>
-          <h3 style="font-family:var(--font-d);font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:300;color:var(--white);line-height:1.4;margin-bottom:12px">Prior to this intervention, the AI module was delivered through <em style="color:var(--amber-l);font-style:italic">lecture slides, static handouts, and timetabled lab sessions</em>, with no embedded simulation access, no accessibility features, and no structured reflection mechanism.</h3>
+          <h3 style="font-family:var(--font-d);font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:300;color:var(--white);line-height:1.4;margin-bottom:12px;text-align:justify;hyphens:auto;">Prior to this intervention, the AI module was delivered through <em style="color:var(--amber-l);font-style:italic">lecture slides, static handouts, and timetabled lab sessions</em>, with no embedded simulation access, no accessibility features, and no structured reflection mechanism.</h3>
           <p style="font-size:.82rem;color:var(--text-2);line-height:1.85;margin:0;text-align:justify;hyphens:auto;">The reflections below represent authentic diagnostic voice, gathered before the dashboard was introduced, evidencing what learners identified as the changes that would most improve their inclusive access to AI learning. Cook-Sather, Bovill and Felten (2014) establish that this diagnostic voice,  gathered before redesign occurs, constitutes the most academically valid basis for inclusive curriculum change.</p>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;flex-shrink:0;min-width:200px">
@@ -1218,15 +1222,15 @@ p{color:var(--text-2)}
       <div style="display:flex;flex-direction:column;gap:0;margin-top:16px;border:1px solid rgba(56,189,248,.15);border-radius:10px;overflow:hidden">
         <div style="padding:16px 20px;border-bottom:1px solid rgba(56,189,248,.1)">
           <div style="font-family:var(--font-m);font-size:.58rem;text-transform:uppercase;letter-spacing:.13em;color:var(--sky);margin-bottom:7px">Reflection as a learning and evidence mechanism</div>
-          <p class="s2jb-text" style="margin:0">Boud, Keogh and Walker (1985) establish that structured reflection is not a supplementary activity, it is the cognitive mechanism through which experience becomes learning. Moon (2004) extends this by demonstrating that depth of reflection directly indicates depth of learning, making reflective submissions the most academically robust form of student evidence available. Together, these frameworks position the reflections below not merely as opinions, but as <strong style="color:var(--white);font-weight:600">evidence of engagement and metacognitive awareness.</strong></p>
+          <p class="s2jb-text" style="margin:0;text-align:justify;hyphens:auto;">Boud, Keogh and Walker (1985) establish that structured reflection is not a supplementary activity, it is the cognitive mechanism through which experience becomes learning. Moon (2004) extends this by demonstrating that depth of reflection directly indicates depth of learning, making reflective submissions the most academically robust form of student evidence available. Together, these frameworks position the reflections below not merely as opinions, but as evidence of engagement and metacognitive awareness.</p>
         </div>
         <div style="padding:16px 20px;border-bottom:1px solid rgba(56,189,248,.1)">
           <div style="font-family:var(--font-m);font-size:.58rem;text-transform:uppercase;letter-spacing:.13em;color:var(--sky);margin-bottom:7px">Student voice as co-design resource</div>
-          <p class="s2jb-text" style="margin:0">Cook-Sather, Bovill and Felten (2014) reframe student voice as a <strong style="color:var(--white);font-weight:600">co-design resource rather than an evaluative metric</strong>, its value lies in identifying what needs to change before redesign occurs. Brookfield (2017) reinforces this through his student lens framework, arguing that systematically listening to students describe their learning experience is among the most reliable mechanisms for identifying invisible curriculum barriers. </p>
+          <p class="s2jb-text" style="margin:0;text-align:justify;hyphens:auto;">Cook-Sather, Bovill and Felten (2014) reframe student voice as a co-design resource rather than an evaluative metric, its value lies in identifying what needs to change before redesign occurs. Brookfield (2017) reinforces this through his student lens framework, arguing that systematically listening to students describe their learning experience is among the most reliable mechanisms for identifying invisible curriculum barriers. </p>
         </div>
         <div style="padding:16px 20px;background:rgba(56,189,248,.05)">
           <div style="font-family:var(--font-m);font-size:.58rem;text-transform:uppercase;letter-spacing:.13em;color:var(--sky);margin-bottom:7px">Why formative reflection strengthens self-regulation and inclusion</div>
-          <p class="s2jb-text" style="margin:0">Nicol and Macfarlane-Dick (2006) demonstrate that formative assessment enabling self-regulation produces significantly stronger outcomes, particularly for learners with assessment anxiety. Carless (2018) shows that structured two-stage prompts, i.e., observation then application, develop evaluative judgement more reliably than unguided writing. These findings ground the design of the two-prompt reflection system across all 18 modules: not as a data-collection tool, but as a <strong style="color:var(--white);font-weight:600">pedagogically evidenced inclusive intervention.</strong></p>
+          <p class="s2jb-text" style="margin:0;text-align:justify;hyphens:auto;">Nicol and Macfarlane-Dick (2006) demonstrate that formative assessment enabling self-regulation produces significantly stronger outcomes, particularly for learners with assessment anxiety. Carless (2018) shows that structured two-stage prompts, i.e., observation then application, develop evaluative judgement more reliably than unguided writing. These findings ground the design of the two-prompt reflection system across all 18 modules: not as a data-collection tool, but as a pedagogically evidenced inclusive intervention.</p>
         </div>
       </div>
     </div>
@@ -1237,56 +1241,56 @@ p{color:var(--text-2)}
     <div class="s2-lit-grid" role="list">
 
       <div class="s2-lit-card" role="listitem">
-        <div class="s2-lit-top"><div class="s2-lit-badge">📖</div><div><div class="s2-lit-author">Boud, Keogh &amp; Walker (1985)</div><div class="s2-lit-journal">Reflection: Turning Experience into Learning</div></div></div>
-        <p class="s2-lit-claim">Reflection is the cognitive mechanism through which experience becomes learning. Without deliberate reflective processing, experiential engagement with simulations produces surface familiarity rather than conceptual change, the gap students named most urgently before this intervention.</p>
+        <div class="s2-lit-top"><div class="s2-lit-badge">📖</div><div><div class="s2-lit-author">Boud, Keogh and Walker (1985)</div><div class="s2-lit-journal">Reflection: Turning Experience into Learning</div></div></div>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Reflection is the cognitive mechanism through which experience becomes learning. Without deliberate reflective processing, experiential engagement with simulations produces surface familiarity rather than conceptual change, the gap students named most urgently before this intervention.</p>
         <span class="s2-lit-connect">Students identified: need for structured post-simulation reflection · S05 confirmed: 93.3% reported reflection deepened understanding</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
         <div class="s2-lit-top"><div class="s2-lit-badge">🌱</div><div><div class="s2-lit-author">Moon (2004)</div><div class="s2-lit-journal">A Handbook of Reflective and Experiential Learning</div></div></div>
-        <p class="s2-lit-claim">Depth of reflection is a direct indicator of depth of learning. Structured prompts reliably elevate reflection depth for all learners, meaning prompt design is not administrative but pedagogically transformative. The two-stage prompt system was designed directly from this evidence base.</p>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Depth of reflection is a direct indicator of depth of learning. Structured prompts reliably elevate reflection depth for all learners, meaning prompt design is not administrative but pedagogically transformative. The two-stage prompt system was designed directly from this evidence base.</p>
         <span class="s2-lit-connect">Students identified: need for guided structure, not open-ended writing · S05 confirmed: 86.7% reflection encouraged critical thinking</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
         <div class="s2-lit-top"><div class="s2-lit-badge">🤝</div><div><div class="s2-lit-author">Cook-Sather, Bovill &amp; Felten (2014)</div><div class="s2-lit-journal">Engaging Students as Partners in Learning and Teaching</div></div></div>
-        <p class="s2-lit-claim">Student voice as co-design resource produces inclusive improvements with stronger pedagogical validity than instructor-only redesign. This section is the direct operationalisation of that argument: student voice gathered before the intervention shapes every design decision that follows.</p>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Student voice as co-design resource produces inclusive improvements with stronger pedagogical validity than instructor-only redesign. This section is the direct operationalisation of that argument: student voice gathered before the intervention shapes every design decision that follows.</p>
         <span class="s2-lit-connect">Students identified: four specific inclusive changes · All four actioned · S05 outcomes confirmed</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
         <div class="s2-lit-top"><div class="s2-lit-badge">🧠</div><div><div class="s2-lit-author">Brookfield (2017)</div><div class="s2-lit-journal">Becoming a Critically Reflective Teacher, 2nd edn</div></div></div>
-        <p class="s2-lit-claim">The student lens is among the most reliable mechanisms for identifying invisible curriculum barriers. What students notice about their own access reveals what instructors cannot detect from outside the learning experience, making this reflective evidence irreplaceable, not supplementary.</p>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">The student lens is among the most reliable mechanisms for identifying invisible curriculum barriers. What students notice about their own access reveals what instructors cannot detect from outside the learning experience, making this reflective evidence irreplaceable, not supplementary.</p>
         <span class="s2-lit-connect">Students identified: four barriers invisible to the instructor · Each became a dashboard design priority</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
-        <div class="s2-lit-top"><div class="s2-lit-badge">📋</div><div><div class="s2-lit-author">Nicol &amp; Macfarlane-Dick (2006)</div><div class="s2-lit-journal">Studies in Higher Education, 31(2)</div></div></div>
-        <p class="s2-lit-claim">Formative assessment enabling self-regulation produces significantly stronger outcomes, particularly for learners with assessment anxiety. Low-stakes reflection with visible progress feedback is a key inclusive mechanism, directly informing the localStorage progress bar system built into every module.</p>
+        <div class="s2-lit-top"><div class="s2-lit-badge">📋</div><div><div class="s2-lit-author">Nicol and Macfarlane-Dick (2006)</div><div class="s2-lit-journal">Studies in Higher Education, 31(2)</div></div></div>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Formative assessment enabling self-regulation produces significantly stronger outcomes, particularly for learners with assessment anxiety. Low-stakes reflection with visible progress feedback is a key inclusive mechanism, directly informing the localStorage progress bar system built into every module.</p>
         <span class="s2-lit-connect">Students identified: need for low-stakes, persistent, progress-visible assessment · S05 confirmed: 93.3% survey Q14</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
         <div class="s2-lit-top"><div class="s2-lit-badge">🌍</div><div><div class="s2-lit-author">Carless (2018)</div><div class="s2-lit-journal">Assessment &amp; Evaluation in Higher Education, 43(8)</div></div></div>
-        <p class="s2-lit-claim">Prompt design is the primary determinant of reflection quality. Two-stage prompts, observation then application, produce the deepest transfer of understanding, distinguishing genuine evaluative judgement from surface description.</p>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Prompt design is the primary determinant of reflection quality. Two-stage prompts, observation then application, produce the deepest transfer of understanding, distinguishing genuine evaluative judgement from surface description.</p>
         <span class="s2-lit-connect">Students identified: need for structured prompts connecting to real-world application · Prompt 2 designed from this evidence</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
         <div class="s2-lit-top"><div class="s2-lit-badge">♿</div><div><div class="s2-lit-author">CAST (2024)</div><div class="s2-lit-journal">Universal Design for Learning Guidelines v3.0</div></div></div>
-        <p class="s2-lit-claim">UDL Guideline 9 establishes that sustained effort is directly supported by structured reflection. Students who can articulate understanding demonstrate deeper, more persistent engagement, meaning the absence of a reflection mechanism is not a neutral omission but an active barrier to inclusive engagement.</p>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">UDL Guideline 9 establishes that sustained effort is directly supported by structured reflection. Students who can articulate understanding demonstrate deeper, more persistent engagement, meaning the absence of a reflection mechanism is not a neutral omission but an active barrier to inclusive engagement.</p>
         <span class="s2-lit-connect">Students identified: need for a mechanism to consolidate and express learning · Addressed across all 18 modules</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
         <div class="s2-lit-top"><div class="s2-lit-badge">🔄</div><div><div class="s2-lit-author">Panadero et al. (2022)</div><div class="s2-lit-journal">European Journal of Psychology of Education, 38(2)</div></div></div>
-        <p class="s2-lit-claim">Digital tools prompting reflective self-assessment at the point of task completion produce measurably stronger metacognitive development in STEM disciplines. Timing matters: reflection deferred loses the experiential anchor that makes it pedagogically effective.</p>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Digital tools prompting reflective self-assessment at the point of task completion produce measurably stronger metacognitive development in STEM disciplines. Timing matters: reflection deferred loses the experiential anchor that makes it pedagogically effective.</p>
         <span class="s2-lit-connect">Students identified: need to capture understanding immediately after simulation · Reflection submitted at point of completion</span>
       </div>
 
       <div class="s2-lit-card" role="listitem">
-        <div class="s2-lit-top"><div class="s2-lit-badge">💻</div><div><div class="s2-lit-author">Bond, Buntins &amp; Bedenlier (2020)</div><div class="s2-lit-journal">Int. Journal of Ed. Technology in Higher Education, 17</div></div></div>
-        <p class="s2-lit-claim">Digital environments embedding structured reflection alongside interactive content produce higher engagement and retention than content-only platforms. Persistence mechanisms, saving prior reflections, are particularly effective for asynchronous and commuter learners, the exact population most disadvantaged by lab-only delivery.</p>
+        <div class="s2-lit-top"><div class="s2-lit-badge">💻</div><div><div class="s2-lit-author">Bond et al. (2020)</div><div class="s2-lit-journal">Int. Journal of Ed. Technology in Higher Education, 17</div></div></div>
+        <p class="s2-lit-claim" style="text-align:justify;hyphens:auto;">Digital environments embedding structured reflection alongside interactive content produce higher engagement and retention than content-only platforms. Persistence mechanisms, saving prior reflections, are particularly effective for asynchronous learners, the exact population most disadvantaged by lab-only delivery.</p>
         <span class="s2-lit-connect">Students identified: need for content and reflection accessible beyond lab hours · localStorage addresses this directly</span>
       </div>
 
@@ -1337,8 +1341,8 @@ p{color:var(--text-2)}
             <span class="s2-freq-badge s2-freq-high">Most frequently named</span>
           </div>
           <blockquote class="s2-change-quote">"What would help most is something that asks me what I understood and how I would apply it — immediately after the lab, while it's still fresh. Without that, a week later it is gone." — Student 03, pre-intervention</blockquote>
-          <p class="s2-change-action">Students identified the absence of guided reflective prompts as a critical barrier to consolidating AI learning. Boud, Keogh and Walker (1985) argue that without deliberate reflection, experiential activity yields surface familiarity rather than conceptual change. Moon (2004) shows that structured two-stage prompts deepen reflection across learners, while David Nicol et al. (2006) demonstrate that low-stakes formative reflection with visible progress feedback strengthens self-regulation. Post-intervention, P.R.’s Transformers reflection and T.N.’s RNN reflection in Section 05 directly evidence this shift.</p>
-          <div><span class="s2-change-journal">Boud et al. (1985) — reflection as learning; Moon (2004) — depth taxonomy; Nicol &amp; Macfarlane-Dick (2006) — self-regulation</span></div>
+          <p class="s2-change-action">Students identified the absence of guided reflective prompts as a critical barrier to consolidating AI learning. Boud, Keogh and Walker (1985) argue that without deliberate reflection, experiential activity yields surface familiarity rather than conceptual change. Moon (2004) shows that structured two-stage prompts deepen reflection across learners, while  Nicol and Macfarlane-Dick (2006) demonstrate that low-stakes formative reflection with visible progress feedback strengthens self-regulation. Post-intervention, P.R.’s Transformers reflection and T.N.’s RNN reflection in Section 05 directly evidence this shift.</p>
+          <div><span class="s2-change-journal">Boud et al. (1985) — reflection as learning; Moon (2004) — depth taxonomy; Nicol and Macfarlane-Dick (2006) — self-regulation</span></div>
           <div><span class="s2-change-implemented">Addressed: two guided reflections per module · Section 05 confirmed: 93.3% survey Q14, Q15</span></div>
         </div>
 
@@ -1348,8 +1352,8 @@ p{color:var(--text-2)}
             <span class="s2-freq-badge s2-freq-med">Named: EAL and disability-disclosed students</span>
           </div>
           <blockquote class="s2-change-quote">"The most beneficial change would be a language option and a way to adjust the text, something that stays on every page. That would make the e module feel like it was designed for me." — Student 05, pre-intervention</blockquote>
-          <p class="s2-change-action">Students with dyslexia, EAL learners, and those studying outside conventional hours identified persistent, always-visible accessibility tools as the most impactful inclusive change. David H. Rose and Anne Meyer (2002) argue that accessibility designed from the outset produces qualitatively different experiences than retrofitted accommodations. Catherine Kieran and Anderson (2018) extend this to linguistic equity, emphasising that UDL must address language diversity alongside disability. Post-intervention, M.L.’s Dijkstra’s reflection and Ch.D.’s Diffusion Models reflection in Section 05 directly confirm the impact of the multi-language selector and read-aloud features.</p>
-          <div><span class="s2-change-journal">Rose &amp; Meyer (2002) — UDL architecture; Kieran &amp; Anderson (2018) — linguistic equity; CAST (2024)</span></div>
+          <p class="s2-change-action">Students with dyslexia, EAL learners, and those studying outside conventional hours identified persistent, always-visible accessibility tools as the most impactful inclusive change. Rose and Anne Meyer (2002) argue that accessibility designed from the outset produces qualitatively different experiences than retrofitted accommodations. Kieran and Anderson (2018) extend this to linguistic equity, emphasising that UDL must address language diversity alongside disability. Post-intervention, M.L.’s Dijkstra’s reflection and Ch.D.’s Diffusion Models reflection in Section 05 directly confirm the impact of the multi-language selector and read-aloud features.</p>
+          <div><span class="s2-change-journal">Rose and Meyer (2002) — UDL architecture; Kieran and Anderson (2018) — linguistic equity; CAST (2024)</span></div>
           <div><span class="s2-change-implemented">Addressed: persistent panel — font scaling, OpenDyslexic, high contrast, read-aloud, EN/ES/FR · S05: 93.3% Q18</span></div>
         </div>
 
@@ -1398,7 +1402,7 @@ p{color:var(--text-2)}
                 <span style="font-family:var(--font-m);font-size:.7rem;color:var(--emerald-l)">93.3% post-survey</span>
               </div>
               <div style="height:6px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden"><div style="width:93%;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--emerald),var(--emerald-l))"></div></div>
-              <div style="font-size:.67rem;color:var(--text-3);margin-top:4px">CAST (2024) · Rose &amp; Meyer (2002) · Q18 · See Section 05: M.L. Dijkstra's, Ch.D. Diffusion</div>
+              <div style="font-size:.67rem;color:var(--text-3);margin-top:4px">CAST (2024) · Rose and Meyer (2002) · Q18 · See Section 05: M.L. Dijkstra's, Ch.D. Diffusion</div>
             </div>
             <div>
               <div style="display:flex;justify-content:space-between;margin-bottom:5px">
@@ -1603,7 +1607,7 @@ p{color:var(--text-2)}
           <div><div class="rc-name">Student 04 — MSc Data Science</div><div class="rc-meta">Pre-intervention · 2026</div></div>
           <div class="rc-date">Before dashboard</div>
         </div>
-        <div class="rc-journal-link">Change named: read-aloud, font tools, asynchronous access · CAST (2024); Rose &amp; Meyer (2002); Bond et al. (2020)</div>
+        <div class="rc-journal-link">Change named: read-aloud, font tools, asynchronous access · CAST (2024); Rose and Meyer (2002); Bond et al. (2020)</div>
         <div style="margin-top:10px">
           <span style="font-family:var(--font-m);font-size:.6rem;padding:3px 10px;border-radius:20px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.18);color:var(--emerald-l)">→ Post-intervention outcome: Section 05 — Ch.D., Diffusion Models reflection, March 2026</span>
         </div>
@@ -1673,36 +1677,39 @@ p{color:var(--text-2)}
 
     <!-- REFERENCES -->
     <div class="s2-refs-box" role="note" aria-label="Section 02 references" style="background:rgba(56,189,248,.05);border:1px solid rgba(56,189,248,.2);margin-top:32px">
-      <button class="s2-refs-toggle" onclick="var open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);var el=this.nextElementSibling;el.classList.toggle('open',open);el.style.maxHeight=open?'9999px':'0';" aria-expanded="false" aria-controls="s2RefsList">
-        <span class="s2-lit-label" style="margin-bottom:0;color:var(--sky);">📚 References</span>
-        <span class="s2-refs-arrow" aria-hidden="true">▼</span>
+      <button onclick="var el=this.nextElementSibling;var open=el.classList.toggle('open');this.setAttribute('aria-expanded',open);this.querySelector('svg').style.transform=open?'rotate(180deg)':'rotate(0deg)';" aria-expanded="false" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px 18px;cursor:pointer;font-family:var(--font-m);font-size:.6rem;color:var(--text-2);width:100%;text-align:left;transition:background .2s;" onmouseover="this.style.background='rgba(255,255,255,.07)'" onmouseout="this.style.background='rgba(255,255,255,.04)'">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--sky)" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        References &#183; Section 02 &#8212; Student Voice &amp; Reflective Evidence
+        <svg style="margin-left:auto;transition:transform .3s" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
-      <div class="s2-refs-list" id="s2RefsList">
-        <div class="s2-ref-item">Bond, M., Buntins, K., Bedenlier, S., Zawacki-Richter, O. and Kerres, M. (2020) 'Mapping research in student engagement and educational technology in higher education', <em>International Journal of Educational Technology in Higher Education,</em> 17, Article 2. Available at: <a href="https://doi.org/10.1186/s41239-019-0176-8" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1186/s41239-019-0176-8</a></div>
+     <div class="s2-refs-list" id="s2RefsList">
+        <div class="s2-ref-item">Bond, M., Buntins, K., Bedenlier, S., Zawacki-Richter, O. and Kerres, M. (2020) &#8216;Mapping research in student engagement and educational technology in higher education&#8217;, <em>International Journal of Educational Technology in Higher Education,</em> 17, Article 2. Available at: <a href="https://doi.org/10.1186/s41239-019-0176-8" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1186/s41239-019-0176-8</a> (Accessed: 1 May 2026).</div>
         <div class="s2-ref-item">Boud, D., Keogh, R. and Walker, D. (1985) <em>Reflection: Turning Experience into Learning.</em> London: Kogan Page.</div>
-        <div class="s2-ref-item">Bransford, J.D., Brown, A.L. and Cocking, R.R. (1999) <em>How People Learn: Brain, Mind, Experience, and School.</em> Washington, DC: National Academy Press.</div>
-        <div class="s2-ref-item">Brookfield, S. (2017) <em>Becoming a Critically Reflective Teacher.</em> 2nd edn. San Francisco, CA: Jossey-Bass.</div>
-        <div class="s2-ref-item">Carless, D. and Boud, D. (2018) 'The development of student feedback literacy', <em>Assessment &amp; Evaluation in Higher Education,</em> 43(8), pp. 1315–1325. Available at: <a href="https://doi.org/10.1080/02602938.2018.1463354" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1080/02602938.2018.1463354</a></div>
-        <div class="s2-ref-item">CAST (2024) <em>Universal Design for Learning Guidelines Version 3.0.</em> Wakefield, MA: CAST. Available at: <a href="https://udlguidelines.cast.org" target="_blank" rel="noopener" style="color:var(--sky)">https://udlguidelines.cast.org</a></div>
+        <div class="s2-ref-item">Bransford, J.D., Brown, A.L. and Cocking, R.R. (eds.) (1999) <em>How People Learn: Brain, Mind, Experience, and School.</em> Washington, DC: National Academy Press.</div>
+        <div class="s2-ref-item">Brookfield, S.D. (2017) <em>Becoming a Critically Reflective Teacher.</em> 2nd edn. San Francisco, CA: Jossey-Bass.</div>
+        <div class="s2-ref-item">Carless, D. and Boud, D. (2018) &#8216;The development of student feedback literacy: enabling uptake of feedback&#8217;, <em>Assessment &amp; Evaluation in Higher Education,</em> 43(8), pp. 1315&#8211;1325. Available at: <a href="https://doi.org/10.1080/02602938.2018.1463354" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1080/02602938.2018.1463354</a> (Accessed: 1 May 2026).</div>
+        <div class="s2-ref-item">CAST (2024) <em>Universal Design for Learning Guidelines Version 3.0.</em> Wakefield, MA: CAST. Available at: <a href="https://udlguidelines.cast.org" target="_blank" rel="noopener" style="color:var(--sky)">https://udlguidelines.cast.org</a> (Accessed: 1 May 2026).</div>
         <div class="s2-ref-item">Cook-Sather, A., Bovill, C. and Felten, P. (2014) <em>Engaging Students as Partners in Learning and Teaching.</em> San Francisco, CA: Jossey-Bass.</div>
-        <div class="s2-ref-item">Cook-Sather, A. (2020) 'Student voice across contexts', <em>Theory Into Practice,</em> 59(2), pp. 182–191. Available at: <a href="https://doi.org/10.1080/00405841.2019.1705091" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1080/00405841.2019.1705091</a></div>
-        <div class="s2-ref-item">Kieran, L. and Anderson, C. (2018) 'Connecting Universal Design for Learning with culturally responsive teaching', <em>Educational Administration Quarterly,</em> 51(9). Available at: <a href="https://doi.org/10.1177/0013124518785012" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1177/0013124518785012</a></div>
-        <div class="s2-ref-item">Kolb, D.A. (1984) <em>Experiential Learning.</em> Englewood Cliffs, NJ: Prentice Hall.</div>
+        <div class="s2-ref-item">Kieran, L. and Anderson, C. (2018) &#8216;Connecting Universal Design for Learning with culturally responsive teaching: a framework for making more equitable and inclusive classrooms&#8217;, <em>Educational Administration Quarterly,</em> 51(9). Available at: <a href="https://doi.org/10.1177/0013124518785012" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1177/0013124518785012</a> (Accessed: 1 May 2026).</div>
+        <div class="s2-ref-item">Kolb, D.A. (1984) <em>Experiential Learning: Experience as the Source of Learning and Development.</em> Englewood Cliffs, NJ: Prentice Hall.</div>
         <div class="s2-ref-item">Mayer, R.E. (2009) <em>Multimedia Learning.</em> 2nd edn. Cambridge: Cambridge University Press.</div>
-        <div class="s2-ref-item">Moon, J.A. (2004) <em>A Handbook of Reflective and Experiential Learning.</em> London: Routledge. Available at: <a href="https://doi.org/10.4324/9780203416150" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.4324/9780203416150</a></div>
-        <div class="s2-ref-item">Nicol, D.J. and Macfarlane-Dick, D. (2006) 'Formative assessment and self-regulated learning', <em>Studies in Higher Education,</em> 31(2), pp. 199–218. Available at: <a href="https://doi.org/10.1080/03075070600572090" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1080/03075070600572090</a></div>
-        <div class="s2-ref-item">Panadero, E. (2017) 'A review of self-regulated learning', <em>Frontiers in Psychology,</em> 8, Article 422. Available at: <a href="https://doi.org/10.3389/fpsyg.2017.00422" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.3389/fpsyg.2017.00422</a></div>
-        <div class="s2-ref-item">Panadero, E., Pérez, D.G., Ruiz, J.F., Fraile, J., Sánchez-Iglesias, I. and Brown, G.T.L. (2023) 'University students' strategies and criteria during self-assessment', <em>European Journal of Psychology of Education,</em> 38, pp. 1031–1051. Available at: <a href="https://doi.org/10.1007/s10212-022-00639-4" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1007/s10212-022-00639-4</a></div>
-   <div class="s2-ref-item">Rose, D.H. and Meyer, A. (2002) <em>Teaching Every Student in the Digital Age.</em> Alexandria, VA: ASCD.</div>
-
+        <div class="s2-ref-item">Moon, J.A. (2004) <em>A Handbook of Reflective and Experiential Learning: Theory and Practice.</em> London: Routledge. Available at: <a href="https://doi.org/10.4324/9780203416150" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.4324/9780203416150</a> (Accessed: 1 May 2026).</div>
+        <div class="s2-ref-item">Nicol, D.J. and Macfarlane-Dick, D. (2006) &#8216;Formative assessment and self-regulated learning: a model and seven principles of good feedback practice&#8217;, <em>Studies in Higher Education,</em> 31(2), pp. 199&#8211;218. Available at: <a href="https://doi.org/10.1080/03075070600572090" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1080/03075070600572090</a> (Accessed: 1 May 2026).</div>
+        <div class="s2-ref-item">Panadero, E. (2017) &#8216;A review of self-regulated learning: six models and four directions for research&#8217;, <em>Frontiers in Psychology,</em> 8, Article 422. Available at: <a href="https://doi.org/10.3389/fpsyg.2017.00422" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.3389/fpsyg.2017.00422</a> (Accessed: 1 May 2026).</div>
+        <div class="s2-ref-item">Panadero, E., P&#233;rez, D.G., Ruiz, J.F., Fraile, J., S&#225;nchez-Iglesias, I. and Brown, G.T.L. (2022) &#8216;University students&#8217; strategies and criteria during self-assessment of problem-solving competence&#8217;, <em>European Journal of Psychology of Education,</em> 38, pp. 1031&#8211;1051. Available at: <a href="https://doi.org/10.1007/s10212-022-00639-4" target="_blank" rel="noopener" style="color:var(--sky)">https://doi.org/10.1007/s10212-022-00639-4</a> (Accessed: 1 May 2026).</div>
+        <div class="s2-ref-item">Rose, D.H. and Meyer, A. (2002) <em>Teaching Every Student in the Digital Age: Universal Design for Learning.</em> Alexandria, VA: Association for Supervision and Curriculum Development.</div>
       </div>
     </div>
 
   </div>
 </section>
+	 <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->  <!-- S2 ENDS HERE S2 ENDS HERE -->
 <genuinely accessible to every learner,!-- S3 UDL PLAN -->
 <section class="sec" id="s3-wrap" aria-labelledby="s3h">
   <div class="wrap">
+	  
+ 
+    
 
   <!-- MODULE INTRODUCTION -->
     <div id="s3" style="margin-bottom:72px">
@@ -2235,7 +2242,7 @@ p{color:var(--text-2)}
   <div style="padding:28px 36px;background:linear-gradient(135deg,rgba(232,163,32,.07),rgba(16,185,129,.04));border:1px solid rgba(232,163,32,.2);border-radius:var(--r-lg);position:relative;overflow:hidden;margin-bottom:0">
     <div style="position:absolute;top:-10px;left:18px;font-family:var(--font-d);font-size:5rem;color:rgba(232,163,32,.08);line-height:1;pointer-events:none">"</div>
     <p style="font-family:var(--font-d);font-size:1.05rem;font-style:italic;font-weight:400;color:var(--white);line-height:1.75;position:relative;z-index:1;margin:0 0 10px">The most important finding from the Section 02 evidence is not what any individual student said. It is that eight students, studying across three different levels of AI complexity, arrived independently at the same conclusion: that the module, as it stood, was not designed for them. That convergence is the rationale. Everything in this section is its answer.</p>
-    <div style="font-family:var(--font-m);font-size:.65rem;color:var(--text-3)">Brookfield (2017) · Cook-Sather, Bovill &amp; Felten (2014) · Kolb (1984) · Boud, Keogh &amp; Walker (1985) · Rose &amp; Meyer (2002)</div>
+    <div style="font-family:var(--font-m);font-size:.65rem;color:var(--text-3)">Brookfield (2017) · Cook-Sather, Bovill and Felten (2014) · Kolb (1984) · Boud, Keogh and Walker (1985) · Rose and Meyer (2002)</div>
   </div>
 
 </div>
@@ -2301,7 +2308,7 @@ p{color:var(--text-2)}
     <div style="font-family:var(--font-d);font-size:1.5rem;font-weight:400;font-style:italic;color:var(--white);margin-bottom:6px;line-height:1.2;">AI Module Redesign</div>
     <div style="font-family:var(--font-m);font-size:.58rem;text-transform:uppercase;letter-spacing:.14em;color:var(--emerald-l);margin-bottom:20px;">CAST UDL 3.0 · Evidence-Informed · Student Voice-Driven · 2026</div>
     <p style="font-size:.88rem;color:var(--text-2);line-height:1.9;margin:0 0 14px;text-align:justify;hyphens:auto;">The redesign of the Interactive AI Learning Dashboard was driven by a convergence of learner feedback and design analysis indicating that the original module structure privileged content delivery over inclusive cognitive access. Student reflections across AI Foundations, Deep Learning, and Advanced Concepts consistently identified three systemic limitations: restricted revisiting of learning experiences, insufficient structured reflection for conceptual consolidation, and fragmented multimodal representation of complex AI systems.</p>
-    <p style="font-size:.88rem;color:var(--text-2);line-height:1.9;margin:0 0 14px;text-align:justify;hyphens:auto;">From a UDL 3.0 perspective (CAST 2024), these barriers reflect misalignment with core learning variability principles rather than learner deficit. Specifically, the absence of flexible representation pathways (CAST Guidelines (GL) 1–3), limited expressive scaffolding (Guidelines 4–6), and constrained motivational autonomy (Guidelines 7–9) indicated a need for a structurally redesigned learning environment rather than incremental content adjustment.</p>
+    <p style="font-size:.88rem;color:var(--text-2);line-height:1.9;margin:0 0 14px;text-align:justify;hyphens:auto;">From a UDL 3.0 perspective CAST (2024), these barriers reflect misalignment with core learning variability principles rather than learner deficit. Specifically, the absence of flexible representation pathways (CAST Guidelines (GL) 1–3), limited expressive scaffolding (Guidelines 4–6), and constrained motivational autonomy (Guidelines 7–9) indicated a need for a structurally redesigned learning environment rather than incremental content adjustment.</p>
 <p style="font-size:.88rem;color:var(--text-2);line-height:1.9;margin:0 0 28px;text-align:justify;hyphens:auto;">The design change was therefore undertaken to re-engineer the dashboard as a UDL-embedded learning architecture, where engagement, cognition, and expression are intentionally designed into the system rather than appended as accessibility features.</p>
 
     <!-- DESIGN FLOW -->
@@ -2535,7 +2542,7 @@ p{color:var(--text-2)}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
           <div style="flex:1;">
-            <div style="font-family:var(--font-m);font-size:.54rem;font-weight:700;color:#a78bfa;margin-bottom:3px;">UDL Curriculum · Meyer, Rose &amp; Gordon (2014)</div>
+            <div style="font-family:var(--font-m);font-size:.54rem;font-weight:700;color:#a78bfa;margin-bottom:3px;">UDL Curriculum · Meyer, Rose and Gordon (2014)</div>
             <div style="font-size:.72rem;color:var(--text-2);line-height:1.65;">Flexible curriculum design that eliminates barriers inherent in traditional AI content delivery, goals, methods, materials, and assessment designed for all learners from the outset.</div>
           </div>
         </div>
@@ -2940,12 +2947,12 @@ p{color:var(--text-2)}
           <div style="font-weight:700;font-size:.9rem;color:var(--white);line-height:1.3">Progress Tracking Mechanism</div>
         </div>
       </div>
-      <p style="font-size:.79rem;color:var(--text-2);line-height:1.82;margin:0 0 12px;text-align:justify;hyphens:auto;">Real-time progress bar linked to reflection completion on every module page, updating dynamically from 0% to 100% as students submit each prompt. Provides a visible learning trajectory that supports persistence and self-regulation (Nicol &amp; Macfarlane-Dick, 2006). Students always see exactly where they are in the module, reducing anxiety and encouraging completion.</p>
+      <p style="font-size:.79rem;color:var(--text-2);line-height:1.82;margin:0 0 12px;text-align:justify;hyphens:auto;">Real-time progress bar linked to reflection completion on every module page, updating dynamically from 0% to 100% as students submit each prompt. Provides a visible learning trajectory that supports persistence and self-regulation (Nicol and Macfarlane-Dick, 2006). Students always see exactly where they are in the module, reducing anxiety and encouraging completion.</p>
       <div style="padding:10px 14px;background:rgba(167,139,250,.05);border:1px solid rgba(167,139,250,.14);border-radius:var(--r-sm);margin-bottom:12px">
         <div style="font-family:var(--font-m);font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:#a78bfa;margin-bottom:5px">⚙ Design change</div>
         <div style="font-size:.74rem;color:var(--text-2);line-height:1.65">Animated CSS progress bar per module page, driven by localStorage reflection submission state, visible, persistent, and updated in real time without page reload.</div>
       </div>
-      <div style="font-family:var(--font-m);font-size:.58rem;padding:3px 10px;border-radius:20px;background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.18);color:#a78bfa;display:inline-block">Evidence: gan.html progress bar · Nicol &amp; Macfarlane-Dick (2006)</div>
+      <div style="font-family:var(--font-m);font-size:.58rem;padding:3px 10px;border-radius:20px;background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.18);color:#a78bfa;display:inline-block">Evidence: gan.html progress bar · Nicol and Macfarlane-Dick (2006)</div>
     </div>
   </div>
 
@@ -3099,7 +3106,7 @@ p{color:var(--text-2)}
         <div style="font-family:var(--font-m);font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald-l);margin-bottom:5px">⚙ Design change</div>
         <div style="font-size:.74rem;color:var(--text-2);line-height:1.65">Reflection textarea, simulation interaction, and optional written concept summary, all on the same page. The reflection system is the primary assessed mode; simulation and notes support it.</div>
       </div>
-      <div style="font-family:var(--font-m);font-size:.58rem;padding:3px 10px;border-radius:20px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.18);color:var(--emerald-l);display:inline-block">Evidence: gan.html · CAST (2024) · Rose &amp; Meyer (2002)</div>
+      <div style="font-family:var(--font-m);font-size:.58rem;padding:3px 10px;border-radius:20px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.18);color:var(--emerald-l);display:inline-block">Evidence: gan.html · CAST (2024) · Rose and Meyer (2002)</div>
     </div>
   </div>
 
@@ -3347,7 +3354,7 @@ p{color:var(--text-2)}
       <!-- Rose & Meyer citation -->
       <div style="padding:12px 14px;background:rgba(251,191,36,.04);border-left:2px solid rgba(251,191,36,.3);border-radius:0 var(--r-sm) var(--r-sm) 0;">
         <div style="font-size:.72rem;color:var(--text-2);line-height:1.65;font-style:italic;">"Accessible design built into the system from the outset produces qualitatively different access."</div>
-        <div style="font-family:var(--font-m);font-size:.6rem;color:#fbbf24;margin-top:6px;">Rose &amp; Meyer (2002)</div>
+        <div style="font-family:var(--font-m);font-size:.6rem;color:#fbbf24;margin-top:6px;">Rose and Meyer (2002)</div>
       </div>
 
     </div>
@@ -3609,7 +3616,7 @@ p{color:var(--text-2)}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a320" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             <div>
               <div style="font-family:var(--font-m);font-size:.52rem;text-transform:uppercase;letter-spacing:.1em;color:var(--amber-l);margin-bottom:3px;">Evidence Base</div>
-              <p style="font-size:.75rem;color:var(--text-2);line-height:1.7;margin:0;text-align:justify;hyphens:auto;">8 pre-intervention student reflections across 3 tiers identified 4 convergent structural barriers: the diagnostic brief for every implementation decision (Cook-Sather, Bovill and Felten, 2014; Brookfield, 2017).</p>
+              <p style="font-size:.75rem;color:var(--text-2);line-height:1.7;margin:0;text-align:justify;hyphens:auto;">8 pre-intervention student reflections across 3 tiers identified 4 convergent structural barriers: the diagnostic brief for every implementation decision (Cook-Sather, Bovill and Felten (2014); Brookfield(2017).</p>
             </div>
           </div>
           <div style="padding:12px 16px;background:rgba(16,185,129,.05);border:1px solid rgba(16,185,129,.15);border-radius:8px;border-left:3px solid var(--emerald);display:flex;align-items:flex-start;gap:10px;">
@@ -3782,7 +3789,7 @@ p{color:var(--text-2)}
               <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;">Guidelines 1 to 3 (multimodal representation) &#183; Guideline 6.3 (search and filter) &#183; Guideline 7.1 (tier navigation and autonomy) &#183; Checkpoints 1.1 to 1.5 (accessibility panel) </div>
             </div>
           </div>
-          <div class="tl-tags"><span class="tl-tag">Mayer (2009)</span><span class="tl-tag">Rose &amp; Meyer (2002)</span><span class="tl-tag">Biggs &amp; Tang (2011)</span><span class="tl-tag">Accessibility Panel</span></div>
+          <div class="tl-tags"><span class="tl-tag">Mayer (2009)</span><span class="tl-tag">Rose and Meyer (2002)</span><span class="tl-tag">Biggs &amp; Tang (2011)</span><span class="tl-tag">Accessibility Panel</span></div>
         </div>
 
         <!-- PHASE 3 -->
@@ -3938,7 +3945,7 @@ p{color:var(--text-2)}
               <div style="font-size:.74rem;color:var(--text-2);line-height:1.65;">Guidelines 6.1 to 6.2 (metacognitive scaffolding) &#183; Guideline 8.4 (progress monitoring) &#183; Guideline 9.3 (self-assessment and reflection)</div>
             </div>
           </div>
-          <div class="tl-tags"><span class="tl-tag">Moon (2004)</span><span class="tl-tag">Nicol &amp; Macfarlane-Dick (2006)</span><span class="tl-tag">Carless &amp; Boud (2018)</span><span class="tl-tag">Ramsden (2003)</span></div>
+          <div class="tl-tags"><span class="tl-tag">Moon (2004)</span><span class="tl-tag">Nicol and Macfarlane-Dick (2006)</span><span class="tl-tag">Carless &amp; Boud (2018)</span><span class="tl-tag">Ramsden (2003)</span></div>
         </div>
 
         <!-- PHASE 5 -->
@@ -4622,7 +4629,7 @@ p{color:var(--text-2)}
             <div style="font-family:var(--font-m);font-size:.52rem;text-transform:uppercase;letter-spacing:.1em;color:var(--sky);">Reflection &amp; Self-Regulation</div>
           </div>
           <p style="font-size:.76rem;color:var(--text-2);line-height:1.7;margin:0;text-align:justify;hyphens:auto;">Structured reflection transforms experience into learning. Boud, Keogh and Walker (1985) and Nicol and Macfarlane-Dick (2006) establish guided prompts as the mechanism that converts simulation engagement into self-regulated conceptual understanding.</p>
-          <div style="margin-top:auto;padding-top:8px;border-top:1px solid rgba(56,189,248,.1);font-family:var(--font-m);font-size:.5rem;color:rgba(56,189,248,.6);">Boud et al. (1985) &#183; Nicol &amp; Macfarlane-Dick (2006) &#183; Panadero (2017)</div>
+          <div style="margin-top:auto;padding-top:8px;border-top:1px solid rgba(56,189,248,.1);font-family:var(--font-m);font-size:.5rem;color:rgba(56,189,248,.6);">Boud et al. (1985) &#183; Nicol and Macfarlane-Dick (2006) &#183; Panadero (2017)</div>
         </div>
 
         <div style="padding:18px 20px;background:rgba(232,163,32,.05);border:1px solid rgba(232,163,32,.15);border-radius:10px;border-top:2px solid var(--amber);display:flex;flex-direction:column;gap:8px;">
@@ -4702,7 +4709,7 @@ p{color:var(--text-2)}
               <div style="height:8px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden;">
                 <div style="width:24%;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--emerald),#6ee7b7);"></div>
               </div>
-              <div style="font-size:.64rem;color:var(--text-3);margin-top:4px;">CAST (2024) &#183; Rose &amp; Meyer (2002)</div>
+              <div style="font-size:.64rem;color:var(--text-3);margin-top:4px;">CAST (2024) &#183; Rose and Meyer (2002)</div>
             </div>
 
             <!-- bar 4 -->
@@ -4717,7 +4724,7 @@ p{color:var(--text-2)}
               <div style="height:8px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden;">
                 <div style="width:14%;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--amber),#fcd34d);"></div>
               </div>
-              <div style="font-size:.64rem;color:var(--text-3);margin-top:4px;">Nicol &amp; Macfarlane-Dick (2006) &#183; Bond et al. (2020)</div>
+              <div style="font-size:.64rem;color:var(--text-3);margin-top:4px;">Nicol and Macfarlane-Dick (2006) &#183; Bond et al. (2020)</div>
             </div>
 
             <!-- stat tiles -->
@@ -4843,7 +4850,7 @@ p{color:var(--text-2)}
           <div class="s2-theme-card" role="listitem" style="border:1px solid rgba(232,163,32,.18);border-top:2px solid var(--amber);">
             <div class="s2-theme-icon-row"><div class="s2-theme-dot" style="background:var(--amber)"></div><div class="s2-theme-label">Flexible access for real lives</div></div>
             <p class="s2-theme-quote">"The read-aloud meant I could follow the lecture during my commute."</p>
-            <span class="s2-theme-journal" style="color:var(--amber-l);background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.2);">Rose &amp; Meyer (2002) &#8212; designed for all learners</span>
+            <span class="s2-theme-journal" style="color:var(--amber-l);background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.2);">Rose and Meyer (2002) &#8212; designed for all learners</span>
           </div>
         </div>
       </div>
@@ -4891,14 +4898,14 @@ p{color:var(--text-2)}
             <div class="s2-change-header"><div class="s2-change-title">Always-visible Help &amp; Compliance menu</div><span class="s2-freq-badge s2-freq-med">Multiple cohorts</span></div>
             <blockquote class="s2-change-quote">"Having a Help &amp; Compliance link always visible meant I never felt lost when the content got genuinely difficult." — R. K., March 2026</blockquote>
             <p class="s2-change-action">Students reported that in advanced modules such as GANs, the absence of a persistent support link created disengagement when content difficulty peaked. The Help &amp; Compliance menu was expanded with per-tier guidance links, creating a consistent, always-accessible safety net. Bransford, Brown and Cocking (1999) identify structured support environments as essential to maintaining learning momentum.</p>
-            <div><span class="s2-change-journal">Bransford, Brown &amp; Cocking (1999) — structured support environments</span></div>
+            <div><span class="s2-change-journal">Bransford, Brown and Cocking (1999) — structured support environments</span></div>
             <div><span class="s2-change-implemented">Implemented: Phase 5, March 2026</span></div>
           </div>
           <div class="s2-change-card" role="listitem">
             <div class="s2-change-header"><div class="s2-change-title">Read-aloud with persistence across module pages</div><span class="s2-freq-badge s2-freq-med">EAL and disability-identified</span></div>
             <blockquote class="s2-change-quote">"The read-aloud feature meant I could listen to the Diffusion Models notes during my commute. This module felt designed for real-world experience." — Ch. D., March 2026</blockquote>
             <p class="s2-change-action">Students with dyslexia and those studying outside conventional settings identified the Web Speech API read-aloud as transformative for equitable access. Student feedback requested the feature persist across page navigation, a development currently in progress for 2026. Rose and Meyer (2002) emphasise that accessibility features built from the start, not retrofitted.</p>
-            <div><span class="s2-change-journal">Rose &amp; Meyer (2002); CAST (2024) multiple means of representation</span></div>
+            <div><span class="s2-change-journal">Rose and Meyer (2002); CAST (2024) multiple means of representation</span></div>
             <div><span class="s2-change-implemented s2-change-progress">In progress: persistent read-aloud, 2025–26</span></div>
           </div>
         </div>
@@ -4950,14 +4957,14 @@ p{color:var(--text-2)}
           <div class="rc-stars" aria-label="4 stars">★★★★☆</div>
           <p class="rc-txt">"The structured reflection questions pushed me beyond just describing what I watched, I had to explain it. The progress bar gave me clear feedback and the in-browser submission meant I never lost my work. High contrast mode made late-night study genuinely easier on my eyes."</p>
           <div class="rc-auth"><div class="rc-ava" style="background:linear-gradient(135deg,var(--sky),#7dd3fc);color:var(--navy)">PR</div><div><div class="rc-name">P. R.</div><div class="rc-meta">MSc · Data Science</div></div><div class="rc-date">March 2026</div></div>
-          <div class="rc-journal-link">Nicol &amp; Macfarlane-Dick (2006) formative assessment and self-regulation</div>
+          <div class="rc-journal-link">Nicol and Macfarlane-Dick (2006) formative assessment and self-regulation</div>
         </article>
         <article class="rc" data-mod2="adv">
           <div class="rc-tag">Advanced Concepts — Diffusion Models</div>
           <div class="rc-stars" aria-label="5 stars">★★★★★</div>
           <p class="rc-txt">"The read-aloud feature meant I could listen to the Diffusion Models lecture notes during my commute. When I reached the simulation, I already understood the concept. This module felt designed for real-world experience, not just for someone with six uninterrupted hours at a desk."</p>
           <div class="rc-auth"><div class="rc-ava" style="background:linear-gradient(135deg,var(--rose),#fda4af);color:var(--navy)">CD</div><div><div class="rc-name">Ch. D.</div><div class="rc-meta">MSc · Data Science</div></div><div class="rc-date">March 2026</div></div>
-          <div class="rc-journal-link">Rose &amp; Meyer (2002); Moon (2004) depth of reflective engagement</div>
+          <div class="rc-journal-link">Rose and Meyer (2002); Moon (2004) depth of reflective engagement</div>
         </article>
         <article class="rc" data-mod2="aif">
           <div class="rc-tag">AI Foundations — Dijkstra's Algorithm</div>
@@ -5028,7 +5035,7 @@ p{color:var(--text-2)}
                 <span style="color:rgba(255,255,255,.15)">|</span>
                 <span style="color:var(--sky)">77.5% engagement rate</span>
                 <span style="color:rgba(255,255,255,.15)">|</span>
-                <span>Nicol &amp; Macfarlane-Dick (2006)</span>
+                <span>Nicol and Macfarlane-Dick (2006)</span>
               </div>
             </div>
           </div>
@@ -5882,7 +5889,7 @@ Mayer’s (2009) dual-channel theory informed a multimodal design integrating PD
           <div style="font-family:var(--font-m);font-size:.5rem;text-transform:uppercase;letter-spacing:.12em;color:var(--amber-l);margin-bottom:10px;">III &#183; Student voice as epistemic co-design</div>
           <h4 style="font-family:var(--font-d);font-size:1rem;font-weight:400;color:var(--white);margin-bottom:10px;line-height:1.3;">186 reflections as diagnostic evidence</h4>
           <p style="font-size:.82rem;color:var(--text-2);line-height:1.82;text-align:justify;hyphens:auto;">The 186 reflections across eight modules are not supplementary records; in Boud, Keogh and Walker’s (1985) terms, they constitute the cognitive mechanism through which experience becomes learning. Cook-Sather, Bovill and Felten (2014) extend this, arguing that when students are positioned as co-designers of their learning, they exercise epistemic agency. The four structural changes identified, simulation access, structured reflection, language support, and co-design mechanisms, were not requests for reduced difficulty, but diagnostic accounts of structural limitations. Nicol and Macfarlane-Dick (2006) situate this within formative feedback, emphasising that acting on student voice closes the loop between teaching intention and learning experience. All four changes were implemented.</p>
-          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:5px;"><span style="font-family:var(--font-m);font-size:.5rem;padding:2px 8px;border-radius:20px;background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.15);color:var(--amber-l);">Boud et al. (1985)</span><span style="font-family:var(--font-m);font-size:.5rem;padding:2px 8px;border-radius:20px;background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.15);color:var(--amber-l);">Cook-Sather et al. (2014)</span><span style="font-family:var(--font-m);font-size:.5rem;padding:2px 8px;border-radius:20px;background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.15);color:var(--amber-l);">Nicol &amp; Macfarlane-Dick (2006)</span></div>
+          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:5px;"><span style="font-family:var(--font-m);font-size:.5rem;padding:2px 8px;border-radius:20px;background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.15);color:var(--amber-l);">Boud et al. (1985)</span><span style="font-family:var(--font-m);font-size:.5rem;padding:2px 8px;border-radius:20px;background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.15);color:var(--amber-l);">Cook-Sather et al. (2020)</span><span style="font-family:var(--font-m);font-size:.5rem;padding:2px 8px;border-radius:20px;background:rgba(232,163,32,.08);border:1px solid rgba(232,163,32,.15);color:var(--amber-l);">Nicol and Macfarlane-Dick (2006)</span></div>
         </div>
 
         <div style="padding:24px;background:rgba(167,139,250,.04);border:1px solid rgba(167,139,250,.14);border-radius:12px;border-top:2px solid #a78bfa;">
@@ -6291,7 +6298,7 @@ Schön (1983) distinguishes between the reflective practitioner, who interrogate
             <div class="je-date">3 October 2025</div>
             <div class="je-ttl">Beginning the AI dashboard redesign: confronting my own assumptions</div>
             <div class="je-exc" style="text-align:justify;hyphens:auto;">The CAST audit revealed that my lecture-notes-only Transformers content and static A* design assumed learners able to engage with dense text without support. Mezirow (1991) frames such disruption as a disorienting dilemma; this audit functioned in that capacity. It shifted my focus from defensiveness to a design question: what would this module look like if designed for all learners from the outset? Vygotsky’s (1978) Zone of Proximal Development reframed the response, moving my emphasis from reducing complexity to strengthening scaffolds toward the same learning outcomes.</div>
-            <div class="je-tags"><span class="je-tag">CAST Audit</span><span class="je-tag">Mezirow 1991</span><span class="je-tag">Vygotsky 1978</span></div>
+            <div class="je-tags"><span class="je-tag">CAST Audit</span><span class="je-tag">Mezirow 1991</span><span class="je-tag">Vygotsky (1978)</span></div>
           </div>
 
           <div class="je" role="listitem button" tabindex="0" aria-pressed="false" onclick="setJe(this)">
@@ -6466,7 +6473,7 @@ Schön (1983) distinguishes between the reflective practitioner, who interrogate
 
     <!-- Conclusion -->
     <div class="conclusion-box" style="margin-top:36px;">
-      <p class="cb-text">Designing the Interactive AI Learning Dashboard required me to dismantle assumptions I had not previously questioned that students could read dense slides at speed, that lab access was sufficient, that assessment anxiety reflected individual deficit rather than design, and that accessibility was an add-on rather than a precondition of effective teaching. Mezirow (1991) conceptualises this form of perspective transformation as the deepest level of adult learning: not the acquisition of new knowledge, but the reconstitution of the frame through which knowledge is interpreted. The value of human diversity encompassing varied talents, perspectives, linguistic resources, cognitive styles, and lived experiences is not a challenge this philosophy accommodates, but the condition upon which it is built. Every design decision between September 2025 and April 2026 was shaped by a single question: how can a learning environment be structured so that human diversity functions as a resource rather than a constraint?The evidence is present in every accessible module, every submitted reflection, and every student who reported, for the first time, a sense of belonging in an AI learning environment.</p>
+      <p class="cb-text">Designing the Interactive AI Learning Dashboard required me to dismantle assumptions I had not previously questioned that students could read dense slides at speed, that lab access was sufficient, that assessment anxiety reflected individual deficit rather than design, and that accessibility was an add-on rather than a precondition of effective teaching. Mezirow (1991) conceptualises this form of perspective transformation as the deepest level of adult learning: not the acquisition of new knowledge, but the reconstitution of the frame through which knowledge is interpreted. The value of human diversity encompassing varied talents, perspectives, linguistic resources, cognitive styles, and lived experiences is not a challenge this philosophy accommodates, but the condition upon which it is built. Every design decision between September 2025 and April 2026 was shaped by a single question: how can a learning environment be structured so that human diversity functions as a resource rather than a constraint? The evidence is present in every accessible module, every submitted reflection, and every student who reported, for the first time, a sense of belonging in an AI learning environment.</p>
       <div class="cb-sub">Dr. Shagufta Henna &#183; Inclusive Educator&#8217;s Reflection &#183; 2025&#8211;26 &#183; CAST UDL Guidelines v3.0 &#183; ATU, Ireland</div>
     </div>
 
@@ -7179,7 +7186,7 @@ Schön (1983) distinguishes between the reflective practitioner, who interrogate
     <div style="padding:12px 16px;display:flex;flex-direction:column;gap:4px;flex:1;">
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">186 authenticated reflections &#183; 8 modules<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:var(--sky);"></span></div>
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">77.5% engagement &#8212; 186 of 240 submissions<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:var(--sky);"></span></div>
-      <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">4 themes &#183; Boud (1985) &#183; Moon (2004) &#183; Nicol (2006)<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:var(--sky);"></span></div>
+      <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">4 themes &#183; Boud (1985) &#183; Moon (2004) &#183; Nicol and Macfarlane-Dick (2006)<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:var(--sky);"></span></div>
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">Cook-Sather (2014) &#183; co-design mechanism<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:var(--sky);"></span></div>
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">4 student-identified changes &#183; 100% actioned<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:var(--sky);"></span></div>
     </div>
@@ -7193,7 +7200,7 @@ Schön (1983) distinguishes between the reflective practitioner, who interrogate
     </div>
     <div style="padding:12px 16px;display:flex;flex-direction:column;gap:4px;flex:1;">
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">CAST UDL 3.0 &#183; all three principles<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#a78bfa;"></span></div>
-      <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">Vygotsky (1978) &#183; Bruner (1961) &#183; Bransford (1999)<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#a78bfa;"></span></div>
+      <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">Vygotsky (1978) &#183; Bruner (1961) &#183; Braansford et al. (1999)<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#a78bfa;"></span></div>
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">Mayer (2009) dual-channel architecture<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#a78bfa;"></span></div>
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">Kieran &amp; Anderson (2018) &#183; linguistic equity<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#a78bfa;"></span></div>
       <div style="font-size:.66rem;color:var(--text-2);line-height:1.45;padding-left:9px;position:relative;">Accessibility plan &#183; WCAG 2.1 AA<span style="position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#a78bfa;"></span></div>
