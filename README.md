@@ -1,5 +1,5 @@
 # ePortfolio — Dr. Shagufta Henna
-### EDUC09043 · Inclusive Practice in AI Education · ATU Galway City · 2025–26
+### EDUC09043 · Inclusive Practice in AI Education · ATU, Ireland · 2025–26
 
 **Module:** EDUC09043  
 **Module Leader:** Maureen Haran  
